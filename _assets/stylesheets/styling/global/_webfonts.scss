@@ -10,9 +10,5 @@
     }
 }
 
-@include embed-font('bariol-regular', 'bariol_regular-webfont');
-@include embed-font('intro', 'intro-webfont');
-@include embed-font('bdrouen', 'bdrouen-webfont');
-@include embed-font('bariol-bold-italic', 'bariol_bold_italic-webfont');
-@include embed-font('bariol-bold', 'bariol_bold-webfont');
-@include embed-font('bariol-italic', 'bariol_regular_italic-webfont');
+@include embed-font('butler-bold', 'butler_bold-webfont');
+@include embed-font('butler-regular', 'butler_regular-webfont');

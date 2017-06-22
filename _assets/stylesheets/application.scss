@@ -16,20 +16,5 @@
 @import "styling/global/navigation";
 
 //forms
-@import "styling/objects/forms/form-variables";
-@import "styling/objects/forms/inputs";
-@import "styling/objects/forms/selects";
-@import "styling/objects/buttons";
-@import "styling/objects/lightbox";
-@import "styling/objects/posts";
-@import "styling/objects/tags";
-@import "styling/objects/chapters";
-
-@import "styling/pages/home";
-@import "styling/pages/techniques";
-@import "styling/pages/save-dinner";
-@import "styling/pages/tips";
-
-
-
-@import "display"
+@import "styling/objects/**/*";
+@import "styling/pages/**/*";

@@ -19,25 +19,24 @@ $bold-weight: 700;
 $heavy: 800;
 $font-black: 900;
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i');
+
 $best-sans-fonts: 'helvetica neue', 'helvetica', 'Arial', sans-serif;
 $best-serif-fonts: 'Georgia', 'Palatino Linotype', 'Book Antiqua', serif;
 $icon-font: 'fontawesome';
 
-$body: 'bariol-regular', $best-sans-fonts;
-$bold: 'bariol-bold', $best-sans-fonts;
-$body-italic: 'bariol-italic', $best-sans-fonts;
-$body-emphasis: 'bariol-bold-italic', $best-sans-fonts;
-$script: 'bdrouen', cursive;
-$header: 'intro', $best-serif-fonts;
+$body: 'montserrat', $best-sans-fonts;
+$header: 'butler-bold', $best-serif-fonts;
+$bold: 'butler-regular', $best-sans-fonts;
 
 body {
   font-family: $body;
 }
 strong {
-  font-weight: $bold;
+  font-weight: $bold-weight;
 }
 b {
-  font-weight: $bold;
+  font-weight: $bold-weight;
 }
 @mixin font-size($size) {
   font-size: $size;
@@ -53,7 +52,7 @@ b {
   h1, h2, h3, h4, h5, h6, p {
     a {
       font-style: italic;
-      color: $salmon;
+      color: $orange;
       border-bottom: 1px solid transparent;
       &:hover {
         border-bottom: 1px solid $salmon;
@@ -89,7 +88,7 @@ h2 {
 }
 
 h3 {
-  @include font($script,rem(24px),$regular,darken($hg-pink, 5%));
+  @include font($body,rem(24px),$regular,darken($hg-pink, 5%));
   text-transform: uppercase;
   letter-spacing: 1px;
 }

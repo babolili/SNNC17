@@ -42,10 +42,3 @@ $ ->
 		$('.savedinner-headers').removeClass 'hidden'
 		$('.savedinner-headers').removeClass 'active'
 		$('.savedinner-cat').removeClass 'active'
-
-
-
-	SimpleJekyllSearch
-	  searchInput: document.getElementById('search-input')
-	  resultsContainer: document.getElementById('results-container')
-	  json: '/search.json'

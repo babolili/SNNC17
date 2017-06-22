@@ -117,7 +117,7 @@
 			color: white;
 			font-weight: $bold;
 			.post-date {
-				font-family: $body-emphasis;
+				font-family: $body;
 			}
 		}
 
@@ -150,7 +150,7 @@
 			max-width: 70%;
 			float: right;
 			line-height: 1.2;
-			font-family: $body-italic;
+			font-family: $body;
 		}
 	}
 	.related {
@@ -166,7 +166,7 @@
 .post-header {
 	.post-meta {
 		.last-updated {
-			font-family: $body-italic;
+			font-family: $body;
 			font-size: rem(14px);
 		}
 	}

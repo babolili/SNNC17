@@ -1,3 +1,19 @@
+.home-bg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: image-url('heart.png');
+	z-index: -1;
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+.logo-container {
+	width: 20%;
+	min-width: 200px;
+	margin: 0 auto;
+	padding-bottom: $padding-xl;
+}
+
 .home {
 	.feature-row {
 		@include clearfix;

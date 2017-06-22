@@ -4,6 +4,6 @@ permalink: /join
 title: About the honest guide
 ---
 
-# About
-
-## this is a h2
+<div class="field">
+    <div class="item"></div>
+</div>

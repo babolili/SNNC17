@@ -42,3 +42,5 @@ $ ->
 		$('.savedinner-headers').removeClass 'hidden'
 		$('.savedinner-headers').removeClass 'active'
 		$('.savedinner-cat').removeClass 'active'
+
+	

@@ -9,7 +9,6 @@ body {
 
 .container {
   @include outer-container;
-  padding-top: 5%;
   z-index: 1;
   @include media($large-phone) {
     padding: 0 $padding-l;

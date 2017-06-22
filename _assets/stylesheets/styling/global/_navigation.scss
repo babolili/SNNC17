@@ -52,7 +52,7 @@ header {
 	
 	.social-row {
 		a {
-			color: darken($hg-pink, 5%);
+			color: $white;
 			font-size: rem(28px);
 			height: $input-base-height;
 			line-height: $input-base-height;
@@ -61,7 +61,7 @@ header {
 			padding: 0px $padding-xs;
 			@include transition(all 0.2s ease-in-out);
 			&:hover {
-				@include transform(scale(1.1,1.1));
+				color: $orange;
 			}
 		}
 	}
@@ -138,7 +138,6 @@ footer {
 	height: $footer-height;
 	width: 100%;
 	display: block;
-	background-color: $hg-pink;
 	text-align: center;
 	.copyright {
 		height: $footer-height;

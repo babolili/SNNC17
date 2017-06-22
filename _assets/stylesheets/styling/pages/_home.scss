@@ -1,108 +1,16 @@
 .home-bg {
 	position: absolute;
-	height: 100%;
-	width: 100%;
-	background: image-url('heart.png');
-	z-index: 0;
+	top: 0; 
+	right: 0; 
+	@include transform(translate(17%, -18%));
+	z-index: -1;
 }
+
 .logo-container {
+	padding-top: 5%;
 	width: 20%;
 	min-width: 200px;
 	margin: 0 auto;
 	padding-bottom: $padding-xl;
 }
 
-.home {
-	.feature-row {
-		@include clearfix;
-		clear: both;
-		@include display(flex);
-		@include flex-flow(wrap);
-
-		> div {
-			max-height: 350px;
-			@include display(flex);
-			&:first-child {
-				margin-left: -1px !important;
-			}
-			img {
-				max-height: 300px;
-			}
-		}
-		.big-feature {
-			@include color-block-gradient($magenta);
-			@include col(8,0,$tablet,12,0);
-			padding: $padding-l;
-			position: relative;
-			.intro-image img {
-				padding: $padding-xl $padding-xl $padding-base $padding-xl;
-				max-height: 250px;
-			}
-			text-align: center;
-		}
-		.smaller-feature {
-			@include color-block-gradient($magenta);
-			@include col(4,0,$tablet,12,0);
-			padding: $padding-l;
-			.image-container {
-				@include transition(all 0.2s ease-in-out);
-			}
-			&:hover {
-				.image-container {
-					@include transform(scale(1.1,1.1));
-				}
-			}
-			@include media($tablet) {
-				display: none;
-			}
-		}
-	}
-}
-
-.home-quick-about {
-	.intro-text {
-		@include col(8,2,$tablet,10,1);
-		@extend %basic-padding;
-		padding-top: $padding-l;
-	}
-}
-
-.chapter-select {
-	background-color: $light-pink;
-	padding: $padding-l;
-	@include col(6,0,$tablet,12,0);		
-	@extend %white-fonts;
-	.learn-about {
-		@include col(8,2,$large-phone,12,0);
-		text-align: center;
-		p {
-			font-size: rem(16px);
-			padding-bottom: $padding-l;
-		}
-	}
-}
-.chapters .home-container {
-	@include col(6,0,$tablet,12,0);			
-}
-.buy-pdf-button {
-	@include button(white, $magenta, $magenta, white);
-	display: inline-block;
-	cursor: pointer;
-}
-.buy-block {
-	@include media($tablet) {
-		display: none;
-	}
-}
-.button-row {
-	display: block;
-	@include clearfix;
-	clear: both;
-	margin-bottom: $padding-xl;
-	> a {
-		display: inline-block;
-		vertical-align: middle;
-		cursor: pointer;
-		margin-bottom: $padding-s;
-	}
-}

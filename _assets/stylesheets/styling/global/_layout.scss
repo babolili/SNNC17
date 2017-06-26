@@ -1,6 +1,7 @@
 
 body {
   background-color: $blue; 
+  @include transition(all 0.1s ease-in-out);
   &.noscroll {
   	height: 100%;
   	overflow: hidden;

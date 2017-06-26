@@ -1,6 +1,6 @@
 
 body {
-  background-color: $blue; 
+  background-color: #1a1d26; 
   @include transition(all 0.1s ease-in-out);
   &.noscroll {
   	height: 100%;

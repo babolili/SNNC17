@@ -49,6 +49,7 @@ assets:
     - _assets/javascripts
     - _assets/stylesheets
     - _assets/images
+    - _assets/JSON
   css_compressor: sass
   cachebust: none
   cache: false

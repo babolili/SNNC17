@@ -6,6 +6,12 @@ body {
   	overflow: hidden;
   }
 }
+#particles-js {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
 
 .container {
   @include outer-container;

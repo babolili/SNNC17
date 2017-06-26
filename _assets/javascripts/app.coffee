@@ -4,6 +4,7 @@
 #= require vendor/featherlight
 #= require vendor/featherlight.gallery
 #= require vendor/waypoints
+#= require vendor/particles.min
 
 $ ->
 	$(document).on 'click', '.mobile-nav-button', (e) ->
@@ -43,4 +44,7 @@ $ ->
 		$('.savedinner-headers').removeClass 'active'
 		$('.savedinner-cat').removeClass 'active'
 
+	particlesJS.load 'particles-js', '/particles.json', ->
+  	console.log 'callback - particles.js config loaded'
+  return
 	

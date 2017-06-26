@@ -1,9 +1,9 @@
 .home-bg {
-	position: absolute;
-	top: 0; 
-	right: 0; 
-	@include transform(translate(17%, -18%));
-	z-index: -1;
+	background: image-url('featherbg.jpg');
+	background-position: center top;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	margin-top: - rem(44px);
 }
 
 .logo-container {

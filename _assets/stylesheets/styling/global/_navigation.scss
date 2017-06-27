@@ -3,9 +3,11 @@ header {
 	left: 0px;
 	right: 0px;
 	top: 0px;
+	height: rem(100px);
 	@include clearfix;
 	clear: both;
 	z-index: 9;
+	@include background(linear-gradient(to bottom, $blue 20%, rgba($blue, 0) 100%));
 	
 	@include media($tablet) {
 		position: absolute;
@@ -17,63 +19,37 @@ header {
 	.mobile-nav-button {
 		display: none;
 	}
-	.logo {
-		position: absolute;
 
-	}
-	.nav-wrapper {
-		float: right;
-		> div {
-			display: inline-block;
-			vertical-align: middle;
-		}
-	}
 	.nav-links {
-		li {
-			display: inline-block;
-			vertical-align: middle;
-			position: relative;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-items: center;
 			a {
-				font-size: rem(18px);
-				display: block;
-				height: $input-base-height + $padding-s;
-				padding: 0 $padding-base;
-				line-height: $input-base-height + $padding-s;
+				font-size: rem(24px);
+				display: flex;
+				padding: $padding-xl;
 				color: $white;
 				font-family: $bold;
-				text-transform: uppercase;
 				@include transition(color  0.2s ease-in-out);
+				&.fa {
+					font-family: Fontawesome;
+				}
 				&:hover {
 					color: $orange;
 				}
 			}
-		}
 	}
 	
-	.social-row {
-		a {
-			color: $white;
-			font-size: rem(28px);
-			height: $input-base-height;
-			line-height: $input-base-height;
-			display: inline-block;
-			vertical-align: middle;
-			padding: 0px $padding-xs;
-			@include transition(all 0.2s ease-in-out);
-			&:hover {
-				color: $orange;
-			}
-		}
-	}
 	@include media($phone) {
+
 		.mobile-nav-button {
-			padding: $padding-xs/2 $padding-base;
+			margin: $padding-xs $padding-base;
 			padding-bottom: $padding-base;
 			display: block !important;
 			position: absolute;
 			left: 0px;
-			top: - $padding-xs/2;
-			bottom: 0px;
 			display: block;
       z-index: 999;
       cursor: pointer;
@@ -83,12 +59,12 @@ header {
         height: rem(5px);
         margin-top: rem(6px);
         padding: 0;
-        background: $hg-pink;
+        background: $white;
         border-radius: 5px;
         //@include transition(all, 0.3s);
       }
       &.active {
-      	background-color: darken($hg-pink, 5%);
+      	background-color: $blue;
       	li {
       		background-color: white;
       		&.top {
@@ -105,27 +81,25 @@ header {
 		}	
 		.nav-links {
 			position: absolute;
-			top: $input-base-height + $padding-s;
 			left: 0px;
 			right: 0px;
-			background-color: darken($hg-pink, 5%);
+			top: 0px;
+			padding-top: rem(80px);
+			padding-bottom: rem(80px);
+			background-color: $blue;
 			display: none !important;
-			li {
-				display: block;
-				a {
-					font-size: rem(21px);
-					color: white;
-					height: auto;
-					background-color: darken($hg-pink, 5%);
-					padding: $padding-base;
-					border-right: 0px;
-					&:hover {
-						background-color: darken($hg-pink, 15%);
-					}
+			box-shadow: 0px 8px 24px -5px rgba(0, 0, 0, 0.66);
+			a {
+				color: white;
+				background-color: $blue;
+				padding: $padding-xl;
+				border-right: 0px;
+				&:hover {
+					color: $orange;
 				}
-			}
-			li + li {
-				border-top: 1px dotted rgba(255,255,255,0.4);
+				&.fa {
+					display: none;
+				}
 			}
 			&.active {
 				display: block !important;

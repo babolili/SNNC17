@@ -1,9 +1,24 @@
 .home-bg {
 	background: image-url('featherbg.jpg');
 	background-position: center top;
-	background-size: 100% auto;
+	background-size: 150% auto;
 	background-repeat: no-repeat;
-	margin-top: - rem(44px);
+	margin-top: - rem(84px);
+	padding-top: rem(84px);
+	@include media($phone) {
+		background-size: auto 150%;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background: image-url('dots.svg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		top: 20%;
+		z-index: 1;
+	}
 }
 
 .logo-container {
@@ -13,4 +28,3 @@
 	margin: 0 auto;
 	padding-bottom: $padding-xl;
 }
-

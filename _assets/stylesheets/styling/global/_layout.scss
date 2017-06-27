@@ -17,7 +17,10 @@ body {
 .container {
   @include outer-container;
   z-index: 1;
-  @include media($large-phone) {
+  @include media($tablet) {
+    max-width: 500px;
+  }
+  @include media($phone) {
     padding: 0 $padding-l;
   }
 }
@@ -27,8 +30,8 @@ body {
   min-height: 100%;
 }
 .navbar-offset {
-  padding-top: rem(44px);
-  min-height: calc(100% - 3.73rem);
+  padding-top: rem(84px);
+  min-height: calc(100% - 6.66667rem);
   @include media($phone) {
     padding-top: 0px;
   }

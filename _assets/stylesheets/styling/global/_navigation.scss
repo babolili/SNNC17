@@ -7,6 +7,7 @@ header {
 	@include clearfix;
 	clear: both;
 	z-index: 9;
+
 	@include background(linear-gradient(to bottom, $blue 20%, rgba($blue, 0) 100%));
 	
 	@include media($tablet) {
@@ -15,15 +16,27 @@ header {
 	@include media($phone) {
 		position: relative;
 	}
-	
+	.nav-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
 	.mobile-nav-button {
 		display: none;
 	}
 
+	.logo {
+		display: flex;
+		flex: 1;
+		img {
+			max-height: rem(60px);	
+		}
+	}
 	.nav-links {
+		flex: 2;
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
 		justify-content: flex-end;
 		align-items: center;
 			a {

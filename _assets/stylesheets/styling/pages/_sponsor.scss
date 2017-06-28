@@ -16,5 +16,11 @@
 		background-size: 100%;
 		top: 20%;
 		z-index: 1;
+		pointer-events: none;
 	}
+}
+
+.sponsor-form {
+	@include col(6,3,$tablet,12,0);
+	@include clearfix;
 }

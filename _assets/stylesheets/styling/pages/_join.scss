@@ -1,0 +1,14 @@
+.join-bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: image-url('joinbg.jpg');
+	background-position: center top;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	margin-top: - rem(84px);
+	padding-top: rem(84px);
+	z-index: -1;
+}

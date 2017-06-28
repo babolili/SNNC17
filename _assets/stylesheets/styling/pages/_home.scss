@@ -6,7 +6,7 @@
 	margin-top: - rem(84px);
 	padding-top: rem(84px);
 	@include media($phone) {
-		background-size: auto 150%;
+		background-size: auto 100%;
 	}
 	&:before {
 		content: '';
@@ -27,4 +27,30 @@
 	min-width: 200px;
 	margin: 0 auto;
 	padding-bottom: $padding-xl;
+}
+
+.sponsor-bg {
+	padding-top: rem(300px);
+}
+
+.mailing-list {
+	z-index: 8;
+	padding: $padding-xl*2 0;
+	@include background-image(linear-gradient(to bottom, $blue, #000));
+	.form-block {
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+		input {
+			flex: 2 0;
+			margin-right: $padding-l; 
+		}
+		button {
+			flex: 1 0;
+			background: $orange;
+			color: white;
+			@include font($bold, rem(22px), $regular, $white);
+			border-radius: $border-base-radius;
+		}
+	}
 }

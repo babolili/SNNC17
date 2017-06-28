@@ -29,7 +29,7 @@
 
 	/* support for nested featherlights. Does not work in IE8 (use JS to fix) */
 	.featherlight:last-of-type {
-		background: rgba($salmon, 0.9);
+		background: rgba($orange, 0.9);
 	}
 
 	.featherlight:before {
@@ -99,7 +99,7 @@
 		font-size: rem(27px);
 		background: #fff; /* Set the background in case it overlaps the content */
 		background: rgba(255, 255, 255, 0.9);
-		color: $black;
+		color: $blue;
 	}
 
 

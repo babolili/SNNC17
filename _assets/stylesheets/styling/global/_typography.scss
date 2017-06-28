@@ -55,7 +55,7 @@ b {
       color: $orange;
       border-bottom: 1px solid transparent;
       &:hover {
-        border-bottom: 1px solid $salmon;
+        border-bottom: 1px solid $orange;
       }
     }
   }
@@ -117,7 +117,7 @@ p {
   a {
     font-family: $bold; 
     text-decoration: underline;
-    color: $hg-pink;
+    color: $orange;
   }
 }
 

@@ -43,7 +43,7 @@ header {
 	}
 	
 	@include media($phone) {
-
+		padding-top: $padding-xl;
 		.mobile-nav-button {
 			margin: $padding-xs $padding-base;
 			padding-bottom: $padding-base;

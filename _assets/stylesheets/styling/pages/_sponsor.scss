@@ -1,0 +1,20 @@
+.sponsor-bg	{
+	background: image-url('sponsorbg.jpg');
+	background-position: center top;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	margin-top: - rem(84px);
+	padding-top: rem(84px);
+	z-index: -1;
+	&:before {
+		content: '';
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background: image-url('sponsordots.svg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		top: 20%;
+		z-index: 1;
+	}
+}

@@ -12,9 +12,18 @@ select {
   font-size: $form-font-size;
   color: $blue;
 }
-
+button {
+  background: $orange;
+  color: white;
+  @include font($bold, rem(22px), $regular, $white);
+  border-radius: $border-base-radius;
+  &:hover {
+    background-color: darken($orange, 10%);
+  }
+}
 label {
   font-weight: bold;
+  color: $white;
   margin-bottom: $padding-base / 4;
 
   &.required:after {

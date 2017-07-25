@@ -29,6 +29,7 @@ header {
 	.logo {
 		display: flex;
 		flex: 1;
+		padding-left: $padding-l;
 		img {
 			max-height: rem(60px);	
 		}
@@ -125,7 +126,9 @@ footer {
 	height: $footer-height;
 	width: 100%;
 	display: block;
+	background-color: $black;
 	text-align: center;
+	flex-shrink: 0; 
 	.copyright {
 		height: $footer-height;
 		line-height: $footer-height;

@@ -1,4 +1,5 @@
 
+
 body {
   background-color: #1a1d26; 
   @include transition(all 0.1s ease-in-out);
@@ -47,9 +48,12 @@ body {
   .header-block {
     text-align: center;
     h1 {
-      max-width: rem(800px);
+      max-width: 800px;
       margin: 0 auto;
     }
   }
+  h3 {
+      text-align: center;
+    }
   @include col(6,3,$tablet,12,0);
 }

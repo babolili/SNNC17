@@ -19,6 +19,7 @@
 	}
 }
 .home-bg {
+	padding-top: $padding-xl*2;
 	background-image: image-url('featherbg.jpg');
 	&:before {
 		background-image: image-url('dots.svg');
@@ -42,13 +43,14 @@
 		display: flex;
 		justify-content: space-between;
 		align-content: center;
+		
 		input {
 			flex: 2 0;
 			margin-right: $padding-l; 
-			padding: rem(5px);
 		}
 		button {
 			flex: 1 0;
 		}
+		
 	}
 }

@@ -10,16 +10,30 @@
 .sponsor-form {
 	@include background-image(linear-gradient(to bottom, rgba(5,6,8,0) 0%, rgba(5,6,8,1) 50%));		
 	.form-block {
-		@include col(6,3,$tablet,12,0);
 		display: flex;
 		justify-content: center;
 		align-content: space-around;
 		flex-wrap: wrap;
 		.input-block {
 			flex: 1 auto;
+			width: 50%;
 			padding: $padding-l; 
-			input {
+			@include media($phone) {
 				width: 100%;
+			}
+			input, textarea {
+				width: 100%;
+			}
+			textarea {
+				height: rem(150px);
+			}
+			&:last-child {
+				width: 100%;
+			}
+			button {
+				height: $input-base-height;
+				padding: 0 $padding-l;
+				margin-top: $padding-l;
 			}
 		}
 	}

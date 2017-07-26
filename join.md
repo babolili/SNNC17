@@ -16,7 +16,13 @@ title: Join SNNC
 				</h3>
 			</div>
 			<p>
-				SNNC wouldn’t be possible without the dedication of hundreds of students and volunteers. It’s more than just a party - it’s a real family. 
+				Students’ Nobel NightCap would not be possible without the hard work of volunteers. At the moment, we consist of a board, project leaders and project managers. Together we are working hard with planning every detail that will make this an unforgettable evening for guests and an awarding experience for every volunteer.
+			</p>
+			<p>
+				We are not currently recruiting but will start the main recruitment process for volunteers shortly. Stay tuned! More information will be posted here and through our other channels. Subscribe to our newsletter below to make sure you don’t miss the opportunity to get involved!
+			</p>
+			<p>
+				If you have questions about how to get involved, send an email to head of HR at <a href="mailto:jonathan.namini@snnc.se">jonathan.namini@snnc.se</a>
 			</p>
 		</div>
 	</div>

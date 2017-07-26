@@ -21,9 +21,9 @@ title: Join SNNC
 			<p>
 				We are not currently recruiting but will start the main recruitment process for volunteers shortly. Stay tuned! More information will be posted here and through our other channels. Subscribe to our newsletter below to make sure you don’t miss the opportunity to get involved!
 			</p>
-			<p>
+			<h3>
 				If you have questions about how to get involved, send an email to head of HR at <a href="mailto:jonathan.namini@snnc.se">jonathan.namini@snnc.se</a>
-			</p>
+			</h3>
 		</div>
 	</div>
 </div>

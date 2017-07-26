@@ -5,6 +5,7 @@ body {
   @include transition(all 0.1s ease-in-out);
   display: flex;
   flex-direction: column;
+  flex-shrink: 0; 
   &.noscroll {
   	height: 100%;
   	overflow: hidden;
@@ -35,6 +36,7 @@ body {
 }
 .navbar-offset {
    flex: 1 0 auto;
+   flex-shrink: 0; 
 }
 .row {
   display: block;

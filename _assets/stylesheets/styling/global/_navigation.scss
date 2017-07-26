@@ -58,13 +58,14 @@ header {
 	
 	@include media($phone) {
 		padding-top: $padding-xl;
-
+		justify-content: flex-start;
 		.mobile-nav-button {
 			position: relative;
 			display: flex;
 			flex-direction: column;
       z-index: 999;
       cursor: pointer;
+      width: 35px;
       li {
         display:block;
         width: 35px;

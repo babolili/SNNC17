@@ -37,7 +37,7 @@ title: Our Sponsors
 	<div class="sponsor-form">
 		<div class="container">
 			<div class="text-block">
-				<form action="https://formspree.io/karin.herzog@snnc.se" method="POST">
+				<form action="https://formspree.io/karin.karlow@snnc.se" method="POST">
 		  	<div class="form-block">
 		  		<div class="input-block">
 		  			<label for="name">Your name</label>

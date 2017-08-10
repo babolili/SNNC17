@@ -12,9 +12,19 @@ select {
   font-size: $form-font-size;
   color: $blue;
 }
-
+button {
+  background: $orange;
+  color: white;
+  @include font($bold, rem(22px), $regular, $white);
+  border-radius: $border-base-radius;
+  height: $input-base-height;
+  &:hover {
+    background-color: darken($orange, 10%);
+  }
+}
 label {
   font-weight: bold;
+  color: $white;
   margin-bottom: $padding-base / 4;
 
   &.required:after {
@@ -32,12 +42,12 @@ textarea,
 #{$all-text-inputs} {
   @include box-sizing(border-box);
   @include transition(border-color);
-  background-color: white;
+  background-color: $white;
   border-radius: $form-border-radius;
   border: 1px solid $form-border-color;
   font-family: $form-font-family;
   font-size: $form-font-size;
-  padding: $padding-base/4 ;
+  padding: rem(5px);
   height: $input-base-height;
 
   &:hover {
@@ -54,7 +64,6 @@ input[type="text"] {
   @include appearance(none);
   height: $input-base-height;
   line-height: $input-base-height;
-  padding: 7px 0px;
 }
 input[type="search"] {
   @include appearance(none);

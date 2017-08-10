@@ -1,10 +1,8 @@
-.home-bg {
-	background: image-url('featherbg.jpg');
+%full-bg {
 	background-position: center top;
 	background-size: 150% auto;
 	background-repeat: no-repeat;
-	margin-top: - rem(84px);
-	padding-top: rem(84px);
+	min-height: 100%;
 	@include media($phone) {
 		background-size: auto 100%;
 	}
@@ -13,13 +11,20 @@
 		position: absolute;
 		height: 100%;
 		width: 100%;
-		background: image-url('dots.svg');
 		background-repeat: no-repeat;
 		background-size: 100%;
 		top: 20%;
 		z-index: 1;
 		pointer-events: none;
 	}
+}
+.home-bg {
+	padding-top: $padding-xl*2;
+	background-image: image-url('featherbg.jpg');
+	&:before {
+		background-image: image-url('dots.svg');
+	}
+	@extend %full-bg;
 }
 
 .logo-container {
@@ -30,28 +35,22 @@
 	padding-bottom: $padding-xl;
 }
 
-.sponsor-bg {
-	padding-top: rem(300px);
-}
-
 .mailing-list {
 	z-index: 8;
 	padding: $padding-xl*2 0;
-	@include background-image(linear-gradient(to bottom, $blue, #000));
+	@include background-image(linear-gradient(to bottom, rgba(5,6,8,0) 0%, rgba(5,6,8,1) 50%));
 	.form-block {
 		display: flex;
 		justify-content: space-between;
 		align-content: center;
+		
 		input {
 			flex: 2 0;
 			margin-right: $padding-l; 
 		}
 		button {
 			flex: 1 0;
-			background: $orange;
-			color: white;
-			@include font($bold, rem(22px), $regular, $white);
-			border-radius: $border-base-radius;
 		}
+		
 	}
 }

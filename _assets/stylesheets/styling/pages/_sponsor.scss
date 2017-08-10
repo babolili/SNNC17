@@ -1,26 +1,40 @@
 .sponsor-bg	{
-	background: image-url('sponsorbg.jpg');
-	background-position: center top;
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	margin-top: - rem(84px);
-	padding-top: rem(84px);
-	z-index: -1;
+	@extend %full-bg;
+	background-image: image-url('sponsorbg.jpg');
+	padding-top: rem(200px);
 	&:before {
-		content: '';
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		background: image-url('sponsordots.svg');
-		background-repeat: no-repeat;
-		background-size: 100%;
-		top: 20%;
-		z-index: 1;
-		pointer-events: none;
+		background-image: image-url('sponsordots.svg');
 	}
 }
 
 .sponsor-form {
-	@include col(6,3,$tablet,12,0);
-	@include clearfix;
+	@include background-image(linear-gradient(to bottom, rgba(5,6,8,0) 0%, rgba(5,6,8,1) 50%));		
+	.form-block {
+		display: flex;
+		justify-content: center;
+		align-content: space-around;
+		flex-wrap: wrap;
+		.input-block {
+			flex: 1 auto;
+			width: 50%;
+			padding: $padding-l; 
+			@include media($phone) {
+				width: 100%;
+			}
+			input, textarea {
+				width: 100%;
+			}
+			textarea {
+				height: rem(150px);
+			}
+			&:last-child {
+				width: 100%;
+			}
+			button {
+				height: $input-base-height;
+				padding: 0 $padding-l;
+				margin-top: $padding-l;
+			}
+		}
+	}
 }

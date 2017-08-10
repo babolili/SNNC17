@@ -14,7 +14,7 @@ header {
 		position: absolute;
 	}
 	@include media($phone) {
-		position: relative;
+		position: absolute;
 	}
 	.nav-wrapper {
 		display: flex;
@@ -29,8 +29,9 @@ header {
 	.logo {
 		display: flex;
 		flex: 1;
+		padding-left: $padding-l;
 		img {
-			max-height: rem(60px);	
+			max-height: rem(35px);	
 		}
 	}
 	.nav-links {
@@ -57,31 +58,32 @@ header {
 	
 	@include media($phone) {
 		padding-top: $padding-xl;
+		justify-content: flex-start;
 		.mobile-nav-button {
-			margin: $padding-xs $padding-base;
-			padding-bottom: $padding-base;
-			display: block !important;
-			position: absolute;
-			left: 0px;
-			display: block;
+			position: relative;
+			display: flex;
+			flex-direction: column;
       z-index: 999;
       cursor: pointer;
+      width: 35px;
       li {
         display:block;
-        width: rem(40px);
-        height: rem(5px);
-        margin-top: rem(6px);
+        width: 35px;
+        height: 3px;
         padding: 0;
         background: $white;
-        border-radius: 5px;
-        //@include transition(all, 0.3s);
+        border-radius: 3px;
+        @include transition(all 0.3s ease-in-out);
+      }
+      li + li {
+      	margin-top: 6px;
       }
       &.active {
       	background-color: $blue;
       	li {
       		background-color: white;
       		&.top {
-      		  @include transform(translateY(250%) rotate(45deg));
+      		  @include transform(translateY(400%) rotate(45deg));
       		}
       		&.bottom {
       		  @include transform(translateY(-200%) rotate(-45deg)); 
@@ -93,26 +95,42 @@ header {
       }
 		}	
 		.nav-links {
-			position: absolute;
+			position: fixed;
 			left: 0px;
 			right: 0px;
 			top: 0px;
+			bottom: 0px;
 			padding-top: rem(80px);
 			padding-bottom: rem(80px);
-			background-color: $blue;
+			background-color: rgba($blue, 0.98);
 			display: none !important;
-			box-shadow: 0px 8px 24px -5px rgba(0, 0, 0, 0.66);
 			a {
 				color: white;
-				background-color: $blue;
-				padding: $padding-xl;
+				background-color: transparent;
 				border-right: 0px;
+				font-size: 33px;
+				text-align: center;
+				flex-direction: column;
+				align-items: center;
+				padding-bottom: $padding-xl;
 				&:hover {
 					color: $orange;
 				}
 				&.fa {
 					display: none;
 				}
+				&:after {
+					content: '';
+					width: 50%;
+					border-bottom: 1px solid rgba($orange, 0.5);
+					color: $orange;
+					display: flex;
+					clear: both;
+					padding: $padding-xl 0 0 0;
+				}
+			}
+			a + a {
+				padding-top: 0;
 			}
 			&.active {
 				display: block !important;
@@ -122,10 +140,11 @@ header {
 }
 
 footer {
-	height: $footer-height;
 	width: 100%;
 	display: block;
+	background-color: $black;
 	text-align: center;
+	flex-shrink: 0; 
 	.copyright {
 		height: $footer-height;
 		line-height: $footer-height;

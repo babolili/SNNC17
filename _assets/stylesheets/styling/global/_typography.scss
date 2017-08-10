@@ -48,18 +48,14 @@ b {
     color: white;
   }
 }
-%link-styling {
-  h1, h2, h3, h4, h5, h6, p {
-    a {
-      font-style: italic;
-      color: $orange;
-      border-bottom: 1px solid transparent;
-      &:hover {
-        border-bottom: 1px solid $orange;
-      }
-    }
+
+h1, h2, h3, h4, h5, h6, p {
+  a {
+    text-decoration: underline;
+    color: $orange;
   }
 }
+
 
 .color-block {
   @extend %white-fonts;
@@ -113,11 +109,6 @@ p {
   padding-bottom: $padding-xl;
   b {
     font-family: $bold;
-  }
-  a {
-    font-family: $bold; 
-    text-decoration: underline;
-    color: $orange;
   }
 }
 

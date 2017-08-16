@@ -1,7 +1,7 @@
 # Site settings
 title:       "Students' Nobel Nightcap 2017"
-email:       "stridlinnea@gmail.com"
-author:      "Students Nobel Nightcap"
+email:       "info@snnc.se"
+author:      "Students' Nobel Nightcap"
 description: "Students' Nobel Nightcap 2017"
 url:         "http://SNNC17.com"
 
@@ -15,7 +15,7 @@ authors:
     active: ""
 
 # Google analytics
-google_analytics: 'UA-41460902-1'
+google_analytics: 'UA-104705448-1'
 
 # Optional features
 animated:           false

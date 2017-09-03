@@ -28,7 +28,6 @@ title: Join SNNC
 			<p>
 				We welcome both Swedish and International applicants (Student or non-student, everyone is welcome!) to <a href="https://goo.gl/forms/hExP2AToaMkelGdt1" target="_blank">apply</a> for a position.
 			</p>
-			<hr>
 			<h3>What will you get out of this?</h3>
 			<ul>
 				<li>
@@ -59,7 +58,79 @@ title: Join SNNC
 				<div class="center">
 					<a href="https://goo.gl/forms/hExP2AToaMkelGdt1" target="_blank" class="button">Apply Now</a>
 				</div>
+				<hr>
 			</div>
 		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="list-block">
+		<h4>Open Project Manager positions:</h4>
+		<ul>
+			<li>
+				Compartment Managers
+			</li>
+			<li>
+				Podio administrators
+			</li>
+			<li>
+				Costume Designers
+			</li>
+			<li>
+				Hair Coordinators
+			</li>
+			<li>
+				 Interior Designer - Textiles
+			</li>
+			<li>
+				Technical Solutions Manager
+			</li>
+			<li>
+				Vice Artistic Technology & Entertainment Coordinator
+			</li>
+			<li>
+				Income and Expense responsible project manager
+			</li>
+			<li>
+				Sponsorship Dinner Manager
+			</li>
+			<li>
+				HR administrative assistant
+			</li>
+			<li>
+				Floor Manager Logistics and Safety
+			</li>
+			<li>
+				Vice Dismantling
+			</li>
+			<li>
+				Vice Wardrobe and entry
+			</li>
+			<li>
+				Media Assistant
+			</li>
+			<li>
+				Sponsorship Event Manager
+			</li>
+		</ul>
+		<hr>
+		<h4>Open crew positions:</h4>
+		<ul>
+			<li>
+				Entertainment Crew
+			</li>
+			<li>
+				Food and Drinks Crew
+			</li>
+			<li>
+				Photographers
+			</li>
+			<li>
+				Safety and Logistics Crew
+			</li>
+			<li>
+				Stylist Crew
+			</li>
+		</ul>
 	</div>
 </div>

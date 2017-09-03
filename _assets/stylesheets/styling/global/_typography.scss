@@ -96,7 +96,8 @@ blockquote {
 }
 
 h4 {
-  @include font($body,rem(21px),$semibold,$white);
+  @include font($bold,rem(24px),$regular, $white);
+  padding-bottom: $padding-xl;
 }
 
 h5 {
@@ -112,9 +113,39 @@ p {
   }
 }
 
-blockquote {
-
-}
+hr {
+    width: 100%;
+    display: block;
+    background-image: image-url('divider.svg');
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0; 
+    color: 0;
+    margin-bottom: $padding-xl;
+    height: $input-base-height;
+  }
+  h3, h1, h2 {
+      text-align: center;
+    }
+  ul {
+    li {
+      @extend p;
+      padding-left: $padding-xl;
+      position: relative;
+      &:before {
+        content: ' ';
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        @include background-image(linear-gradient(to bottom, #fe5408 0%, #f7722b 100%));   
+        display: block;
+        position: absolute;
+        left: 0;
+        top: $padding-s;
+      }
+    }
+  }
 
 %numbered-list {
   ol {

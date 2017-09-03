@@ -81,7 +81,7 @@ h1 {
 }
 
 h2 {
-   @include font($bold,rem(30px),$light,$white);
+   @include font($header,rem(30px),$light,$white);
    padding-bottom: $padding-xl;
 }
 

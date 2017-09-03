@@ -22,6 +22,19 @@ button {
     background-color: darken($orange, 10%);
   }
 }
+.button {
+  background: $orange;
+  @include font($bold, rem(22px), $regular, $white);
+  border-radius: $border-base-radius;
+  height: $input-base-height;
+  display: inline-block; 
+  line-height: $input-base-height;
+  padding: 0 $padding-l;
+  margin-bottom: $padding-xl;
+  &:hover {
+    background-color: darken($orange, 10%);
+  }
+}
 label {
   font-weight: bold;
   color: $white;

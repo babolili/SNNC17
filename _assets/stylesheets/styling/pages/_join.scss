@@ -2,6 +2,9 @@
 	@extend %full-bg;
 	background-image: image-url('joinbg.jpg');
 	padding-top: rem(200px);
+	&:before {
+		background-image: image-url('joindots.svg');
+	}
 }
 
 .deadline-container {

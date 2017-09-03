@@ -57,6 +57,18 @@ body {
       margin: 0 auto;
     }
   }
+  hr {
+    width: 100%;
+    display: block;
+    background-image: image-url('divider.svg');
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0; 
+    color: 0;
+    margin-bottom: $padding-xl;
+    height: $input-base-height;
+  }
   h3, h1, h2 {
       text-align: center;
     }

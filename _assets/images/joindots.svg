@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="986px" height="396px" viewBox="0 0 986 396" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <title>Group</title>
+  <desc>Created with Sketch.</desc>
+  <defs>
+    <linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="linearGradient-1">
+      <stop stop-color="#FE5206" offset="0"/>
+      <stop stop-color="#F18B47" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Desktop-Copy-7" transform="translate(-38.000000, -34.000000)" fill="url(#linearGradient-1)">
+      <g id="Group" transform="translate(38.000000, 34.000000)">
+        <circle id="Oval-Copy-21" cx="958.611" cy="59.962" r="52.181"/>
+        <circle id="Oval-Copy-17" cx="29.681" cy="207.606" r="9.5"/>
+        <circle id="Oval-Copy-9" cx="104.813" cy="103.327" r="3.5"/>
+        <circle id="Oval-Copy-20" cx="65.745" cy="18.33" r="3.5"/>
+        <circle id="Oval-Copy-10" cx="955.093" cy="190.617" r="3.5"/>
+        <circle id="Oval-Copy-18" cx="39.307" cy="90.956" r="3.5"/>
+        <circle id="Oval-Copy-22" cx="65.5" cy="352.5" r="3.5"/>
+        <circle id="Oval-Copy-19" cx="564.982" cy="339.766" r="13.591" transform="matrix(1.424254, 0, 0, 1.42425, -753.785217, -192.506668)"/>
+        <circle id="Oval-Copy-14" cx="876.5" cy="54.5" r="3.5"/>
+        <circle id="Oval-Copy-15" cx="2535.467" cy="217.139" r="11.428" transform="matrix(0.999989, 0, 0, 1, -1577.338745, 66.268997)"/>
+        <circle id="Oval-Copy-11" cx="2378.736" cy="525.519" r="9.266" transform="matrix(0.999993, 0, 0, 1.000003, -1451.389893, -384.319183)"/>
+        <circle id="circle-1" cx="2535.467" cy="217.139" r="11.428" transform="matrix(1.378402, 0, 0, 1.378417, -3494.891602, -264.7117)"/>
+        <circle id="circle-2" cx="942.75" cy="243.616" r="3.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

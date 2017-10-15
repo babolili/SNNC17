@@ -1,6 +1,6 @@
 %full-bg {
 	background-position: center top;
-	background-size: 150% auto;
+	background-size: 125% auto;
 	background-repeat: no-repeat;
 	min-height: 100%;
 	@include media($phone) {
@@ -53,4 +53,9 @@
 		}
 		
 	}
+}
+.error-bg {
+	padding-top: $padding-xl*4;
+	background-image: image-url('errorbg.jpg');
+	@extend %full-bg;
 }

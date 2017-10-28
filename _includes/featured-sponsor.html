@@ -1,0 +1,26 @@
+<div class="featured-sponsor">
+  <h1 class="badge">
+    {% assign post_letter = post.letter %}
+    {% if post_letter == %} 
+      &nbsp; 
+    {% else %}
+      {{ post.letter}}
+    {% endif %}
+  </h1>
+  <div class="s-logo">
+    {% assign post_image = post.image %}
+    {% if post_image == %} 
+      &nbsp; 
+    {% else %}
+      {{ post_image | image }}
+    {% endif %}
+  </div>
+  <div class="s-desc">
+    <h2>
+      {{post.title}}
+    </h2>
+    <p>
+      {{post.summary}}
+    </p>
+  </div>
+</div>

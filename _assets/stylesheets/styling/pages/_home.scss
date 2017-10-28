@@ -59,3 +59,11 @@
 	background-image: image-url('errorbg.jpg');
 	@extend %full-bg;
 }
+.about-bg {
+	padding-top: rem(200px);
+	background-image: image-url('aboutbg.jpg');
+	@extend %full-bg;
+	&:before {
+		background-image: image-url('sponsordots.svg');
+	}
+}

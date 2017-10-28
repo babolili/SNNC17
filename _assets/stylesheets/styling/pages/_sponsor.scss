@@ -1,6 +1,7 @@
 .sponsor-bg	{
 	@extend %full-bg;
-	background-image: image-url('sponsorbg.jpg');
+	@include background(linear-gradient(to bottom, rgba(5,6,8,0) 0%, rgba(5,6,8,1) 50%),image-url('sponsorbg.jpg'));
+	background-size: 120% auto;
 	padding-top: rem(200px);
 	&:before {
 		background-image: image-url('sponsordots.svg');
@@ -8,7 +9,7 @@
 }
 
 .sponsor-form {
-	@include background-image(linear-gradient(to bottom, rgba(5,6,8,0) 0%, rgba(5,6,8,1) 50%));		
+	@include background-image(linear-gradient(to bottom, rgba(5,6,8,0) 0%, rgba(5,6,8,1) 80%));		
 	.form-block {
 		display: flex;
 		justify-content: center;
@@ -37,4 +38,59 @@
 			}
 		}
 	}
+}
+.clear {
+	display: block;
+	clear: both;
+	width: 100%;
+	@include clearfix;
+}
+.sponsor-list	{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: stretch;
+
+	.featured-sponsor {
+		margin-top: $padding-xl*4;
+		background: $white;
+		padding: $padding-xl;
+		text-align: center;
+		position: relative;
+		width: 48%;
+		display: flex;
+		flex-flow: column wrap;
+		align-content: flex-start;
+		align-items: flex-start;
+
+		h1,h2,h3,h4,h5,p {
+			color: $black;
+		}
+		.badge {
+			@include background(linear-gradient(to bottom, #fd560a, #f28742));
+			padding: $padding-l;
+			position: absolute;
+			top: 0;
+			left: 20%;
+			@include transform(translate(0%, -50%));
+			height: rem(92px);
+			width: rem(92px);
+			border-radius: 50%;
+			display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    color: $white;
+	    box-shadow: 0 25px 40px -20px shade($orange, 5%);
+		}
+		.s-logo {
+			text-align: center;
+			width: 100%;
+			img {
+				max-height: rem(300px);
+				mix-blend-mode: multiply;
+			}
+		}
+	}	
 }

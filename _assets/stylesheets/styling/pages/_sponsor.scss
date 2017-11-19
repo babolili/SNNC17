@@ -46,51 +46,80 @@
 	@include clearfix;
 }
 .sponsor-list	{
-	width: 100%;
+	background: $white;
+	margin: 0 auto;
+  width: 95%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: stretch;
 	align-content: stretch;
+	opacity: 0.9;
+	border-radius: 2rem;
 
-	.featured-sponsor {
-		margin-top: $padding-xl*4;
-		background: $white;
+	.badge {
+		@include background(linear-gradient(to bottom, #fd560a, #f28742));
+		z-index: 2;
+		padding: $padding-l;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		@include transform(translate(-50%, 50%));
+		@include transition(all 0.2s ease-in-out);
+		height: rem(92px);
+		width: rem(92px);
+		border-radius: 50%;
+		display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    box-shadow: 0 25px 40px -20px shade($orange, 5%);
+    a {
+    	color: $white !important;
+    }
+    &:hover {
+    	@include transform(translate(-50%, 50%) scale(1.1,1.1));
+    }
+	}
+	.s-logo {
+		text-align: center;
+		width: 100%;
+		img {
+			max-height: rem(300px);
+			mix-blend-mode: multiply;
+		}
+	}
+
+	%sponsor-item {
 		padding: $padding-xl;
+		margin-bottom: $padding-xl;
 		text-align: center;
 		position: relative;
-		width: 48%;
 		display: flex;
 		flex-flow: column wrap;
 		align-content: flex-start;
 		align-items: flex-start;
+	}
 
-		h1,h2,h3,h4,h5,p {
-			color: $black;
-		}
-		.badge {
-			@include background(linear-gradient(to bottom, #fd560a, #f28742));
-			padding: $padding-l;
-			position: absolute;
-			top: 0;
-			left: 20%;
-			@include transform(translate(0%, -50%));
-			height: rem(92px);
-			width: rem(92px);
-			border-radius: 50%;
-			display: flex;
-	    justify-content: center;
-	    align-items: center;
-	    color: $white;
-	    box-shadow: 0 25px 40px -20px shade($orange, 5%);
-		}
-		.s-logo {
-			text-align: center;
+	.featured-sponsor {
+		@extend %sponsor-item;
+		width: 33%;
+		@include media($tablet) {
 			width: 100%;
-			img {
-				max-height: rem(300px);
-				mix-blend-mode: multiply;
-			}
+		}
+	}	
+	.medium-sponsor {
+		@extend %sponsor-item;
+		width: 25%;
+		@include media($tablet) {
+			width: 50%;
+		}
+	}	
+	.small-sponsor {
+		@extend %sponsor-item;
+		width: 20%;
+		@include media($tablet) {
+			width: 33%;
 		}
 	}	
 }

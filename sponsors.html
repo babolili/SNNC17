@@ -15,15 +15,26 @@ title: Our Sponsors
 		</div>
 		
 		<div class="sponsor-list">
-			{% for post in site.posts %}
+			{% for post in site.categories.large-sponsor %}
 				{% include featured-sponsor.html %}
+			{% endfor %}
+			<hr>
+			{% for post in site.categories.medium-sponsor %}
+				{% include medium-sponsor.html %}
+			{% endfor %}
+			<hr>
+			{% for post in site.categories.small-sponsor %}
+				{% include small-sponsor.html %}
 			{% endfor %}
 		</div>
 
+		
 		<div class="text-block">
-			<h3>
-				Want to be a part of something great? 
-			</h3>
+			<div class="header-block">
+				<h1>
+					Want to be a part of something great? 
+				</h1>
+			</div>
 			<p>
 				As a sponsor for SNNC you will be a crucial part of an unique event. Not only will you get the opportunity to reach all of the guests, but also the thousands of people who are interested in the event and involved in making it happen. 
 			</p>

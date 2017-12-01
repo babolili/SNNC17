@@ -18,12 +18,20 @@
 		pointer-events: none;
 	}
 }
+
 .home-bg {
 	padding-top: $padding-xl*2;
 	background-image: image-url('featherbg.jpg');
 	&:before {
 		background-image: image-url('dots.svg');
 	}
+	@extend %full-bg;
+}
+
+
+.guest-bg {
+	padding-top: $padding-xl*4;
+	background-image: image-url('guestbg.jpg');
 	@extend %full-bg;
 }
 

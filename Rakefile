@@ -266,7 +266,6 @@ task :publish do
   end
 end
 
-# rake page["Title"]
 # rake page["Title","Path/to/folder"]
 desc "Create a page (optional filepath)"
 task :page, :title, :path do |t, args|

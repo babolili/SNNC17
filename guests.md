@@ -18,7 +18,7 @@ title: Info for our guests
 				The address is Medicinska föreningen, Nobels väg 10, Solna.
 			</p>
 			<p>
-				The doors open at 22.00 on the 10th of December and the party ends at 05.00 on the 11th of December.
+				The doors open at 22.00 on the 10th of December and the party ends at 05.00 on the 11th of December. Late entry ticket holders will be admitted at 02:00.
 			</p>
 			<hr>
 			<h3>

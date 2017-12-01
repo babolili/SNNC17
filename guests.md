@@ -62,7 +62,7 @@ title: Info for our guests
 			</h4>
 			<ul>
 				<li>
-					Black tailcoat (tuxedo) with silk facings, sharply cut away at the front
+					Black tailcoat with silk facings, sharply cut away at the front
 				</li>
 				<li>
 					Black trousers with two rows of braid down each leg

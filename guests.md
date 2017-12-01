@@ -42,52 +42,59 @@ title: Info for our guests
 			</p>
 			<hr>
 			<h3>
-				Rules & Dress code
+				Privacy
 			</h3>
-			<p>
-				Please advise that the use of mobile phone cameras are prohibited during the event. All guests who are seen using cell phones for taking pictures will be asked to put their phones away. We also ask that you follow the dress code. 
-			</p>
 			<p>
 				No journalists are allowed inside to make sure that this will be a safe haven to relax but also to celebrate in the company of your friends, distinguished guests and students.
 			</p>
 			<p>
-				Dress code is <a href="https://en.wikipedia.org/wiki/White_tie" target="_blank">white tie</a>, the most formal attire. This can be either traditional western white tie (explained in detail below), formal military attire, or formal attire from any other culture. 
+				Please advise that the use of mobile phone cameras are prohibited during the event. All guests who are seen using cell phones for taking pictures will be asked to put their phones away. 
+			</p>
+			<hr>
+			<h3>
+				Dress code
+			</h3>
+			<p>
+				Dress code is <a href="https://en.wikipedia.org/wiki/White_tie" target="_blank">white tie</a>, the most formal attire. Guest can come either in white tie and tails (explained in detail below), nightgown (explained in detail below) formal military attire, or formal attire from any other culture. 
 			</p>
 			<h4>
-				White Tie: Men
+				White tie and tails
 			</h4>
 			<ul>
 				<li>
-					A black single-breasted tailcoat in black wool (barathea) or ultrafine herringbone with silk peaked lapels, often grosgrain (worn unbuttoned). The coat is shorter at the front than a morning coat.
+					Black tailcoat (tuxedo) with silk facings, sharply cut away at the front
 				</li>
 				<li>
-					Black trousers with a natural taper and two lines of braid down the outside leg.
+					Black trousers with two rows of braid down each leg
 				</li>
 				<li>
-					A white marcella (cotton piqué) shirt with a starched detachable wing collar and double cuffs.
+					White stiff-fronted shirt with white stiff wing collar attached to the shirt with collar studs
 				</li>
 				<li>
-					Cufflinks and studs. The shirt will usually be closed with studs rather than buttons. These may be plain white or decorative.
+					White bowtie
 				</li>
 				<li>
-					A low-cut, white marcella evening waistcoat (double or single breasted).
+					White, low-cut waistcoat
 				</li>
 				<li>
-					A thin, white hand-tied marcella bow tie.
+					Black dress socks and black formal shoes
 				</li>
 				<li>
-					Highly polished or patent black lace-up shoes, worn with black laces (traditionally ribbon) and black socks.
+					Shirt studs and cufflinks should be silver or white. A white handkerchief is usually worn
 				</li>
 			</ul>
 			<h4>
-				White tie: Women
+				Nightgown
 			</h4>
 			<ul>
 				<li>
-					Full-length, formal evening dresses. It is traditional, but not essential, to show décolletage. Shorter dresses or trousers, no matter how smart, are not acceptable.
+					Floor-length, formal evening dresses of any style or design
 				</li>
 				<li>
-					Evening bags should be small and elegant.
+					Evening bags should be small and elegant
+				</li>
+				<li>
+					Long gloves and shawls can be worn, but are optional
 				</li>
 			</ul>
 		</div>

@@ -55,7 +55,7 @@ title: Info for our guests
 				Dress code
 			</h3>
 			<p>
-				Dress code is <a href="https://en.wikipedia.org/wiki/White_tie" target="_blank">white tie</a>, the most formal attire. Guest can come either in white tie and tails (explained in detail below), nightgown (explained in detail below) formal military attire, or formal attire from any other culture. 
+				Dress code is <a href="https://en.wikipedia.org/wiki/White_tie" target="_blank">white tie</a>, the most formal attire. Guest can come either in white tie and tails (explained in detail below), evening gown (explained in detail below) formal military attire, or formal attire from any other culture. 
 			</p>
 			<h4>
 				White tie and tails
@@ -84,7 +84,7 @@ title: Info for our guests
 				</li>
 			</ul>
 			<h4>
-				Nightgown
+				Evening gown
 			</h4>
 			<ul>
 				<li>

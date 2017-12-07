@@ -87,11 +87,7 @@
 		text-align: center;
 		width: 100%;
 		height: 100%;
-		a {
-			width: 100%;
-			text-align: center;
-			display: block;
-		}
+		
 		img {
 			max-height: rem(300px);
 			mix-blend-mode: multiply;
@@ -110,7 +106,7 @@
 		align-items: flex-start;
 	}
 
-	.featured-sponsor {
+	.large-sponsor {
 		@extend %sponsor-item;
 		width: 33%;
 		@include media($tablet) {

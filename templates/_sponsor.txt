@@ -1,0 +1,15 @@
+---
+layout: equipment
+title: 
+type: "Equipment"
+category: equipment
+color: "#FDA18A"
+image: equipment/
+summary: 
+date: 
+related:
+cost:
+care:
+tags:
+- equipment
+---

@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /sponsors
+permalink: /21312
 title: Our Sponsors
 ---
 <div class="sponsor-bg">

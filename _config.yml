@@ -92,6 +92,10 @@ general:
 page:
   template: templates/_page.txt
   extension: md
+
+sponsor:
+  template: templates/_page.txt
+  extension: md
 editor: gvim
 git:
   branch: master

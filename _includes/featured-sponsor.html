@@ -1,0 +1,10 @@
+<div class="{{post.category}}">
+  <a href="{{ post.link}}" class="s-logo" target="_blank">
+    {% assign post_image = post.image %}
+    {% if post_image == %} 
+      &nbsp; 
+    {% else %}
+      {{ post_image | image }}
+    {% endif %}
+  </a>
+</div>

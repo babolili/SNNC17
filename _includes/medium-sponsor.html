@@ -1,0 +1,12 @@
+<div class="medium-sponsor">
+  <div class="s-logo">
+    <a href="{{ post.link}}" target="_blank">
+    {% assign post_image = post.image %}
+    {% if post_image == %} 
+      &nbsp; 
+    {% else %}
+      {{ post_image | image }}
+    {% endif %}
+    </a>
+  </div>
+</div>

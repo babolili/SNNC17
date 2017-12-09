@@ -1,6 +1,7 @@
 .sponsor-bg	{
 	@extend %full-bg;
-	background-image: image-url('sponsorbg.jpg');
+	@include background(linear-gradient(to bottom, rgba(5,6,8,0) 0%, rgba(5,6,8,1) 50%),image-url('sponsorbg.jpg'));
+	background-size: 120% auto;
 	padding-top: rem(200px);
 	&:before {
 		background-image: image-url('sponsordots.svg');
@@ -8,7 +9,7 @@
 }
 
 .sponsor-form {
-	@include background-image(linear-gradient(to bottom, rgba(5,6,8,0) 0%, rgba(5,6,8,1) 50%));		
+	@include background-image(linear-gradient(to bottom, rgba(5,6,8,0) 0%, rgba(5,6,8,1) 80%));		
 	.form-block {
 		display: flex;
 		justify-content: center;
@@ -37,4 +38,94 @@
 			}
 		}
 	}
+}
+.clear {
+	display: block;
+	clear: both;
+	width: 100%;
+	@include clearfix;
+}
+.sponsor-list	{
+	background: $white;
+	margin: 0 auto;
+  width: 95%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: stretch;
+	opacity: 0.9;
+	border-radius: 2rem;
+
+	.badge {
+		@include background(linear-gradient(to bottom, #fd560a, #f28742));
+		z-index: 2;
+		padding: $padding-l;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		@include transform(translate(-50%, 50%));
+		@include transition(all 0.2s ease-in-out);
+		height: rem(92px);
+		width: rem(92px);
+		border-radius: 50%;
+		display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    box-shadow: 0 25px 40px -20px shade($orange, 5%);
+    a {
+    	color: $white !important;
+    }
+    &:hover {
+    	@include transform(translate(-50%, 50%) scale(1.1,1.1));
+    }
+	}
+	.s-logo {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		
+		img {
+			max-height: rem(300px);
+			mix-blend-mode: multiply;
+			margin: 0 auto;
+		}
+	}
+
+	%sponsor-item {
+		padding: $padding-xl;
+		margin-bottom: $padding-xl;
+		text-align: center;
+		position: relative;
+		display: flex;
+		flex-flow: column wrap;
+		flex-basis: auto;
+		align-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.large-sponsor {
+		@extend %sponsor-item;
+		width: 33%;
+		@include media($tablet) {
+			width: 100%;
+		}
+	}	
+	.medium-sponsor {
+		@extend %sponsor-item;
+		width: 25%;
+		@include media($tablet) {
+			width: 50%;
+		}
+	}	
+	.small-sponsor {
+		@extend %sponsor-item;
+		width: 20%;
+		@include media($tablet) {
+			width: 33%;
+		}
+	}	
 }

@@ -52,6 +52,7 @@ body {
 .text-block {
   .header-block {
     text-align: center;
+    margin-top: $padding-xl;
     h1 {
       max-width: 800px;
       margin: 0 auto;
@@ -73,5 +74,14 @@ body {
   bottom: 0;
   h3 {
     padding-bottom: 0;
+  }
+}
+.image-border {
+  border: 1rem solid white;
+  margin-bottom: $padding-xl;
+  opacity: 0.7;
+  @include transition(opacity 0.3s ease-in-out);
+  &:hover {
+    opacity: 1;
   }
 }

@@ -75,6 +75,7 @@ INGREDIENT = "_posts/ingredients"
 EQUIPMENT = "_posts/equipment"
 TIPSTRICKS = "_posts/tipstricks"
 TECHNIQUES = "_posts/techniques"
+SPONSOR = "_posts"
 SAVEDINNER = "_posts/savedinner"
 GENERAL = "_posts/general"
 DRAFTS = "_drafts"
@@ -193,6 +194,20 @@ task :techniques, :title do |t, args|
   create_file(TECHNIQUES, filename, content, title, editor)
 end
 
+# rake sponsor["Title"]
+desc "Create a sponsor post"
+task :sponsor, :title do |t, args|
+  title = args[:title]
+  template = CONFIG["sponsor"]["template"]
+  extension = CONFIG["sponsor"]["extension"]
+  editor = CONFIG["editor"]
+  check_title(title)
+  filename = "#{DATE}-#{transform_to_slug(title, extension)}"
+  content = read_file(template)
+  create_file(SPONSOR, filename, content, title, editor)
+end
+
+
 # rake savedinner["Title"]
 desc "Create a savedinner post"
 task :savedinner, :title do |t, args|
@@ -251,7 +266,6 @@ task :publish do
   end
 end
 
-# rake page["Title"]
 # rake page["Title","Path/to/folder"]
 desc "Create a page (optional filepath)"
 task :page, :title, :path do |t, args|

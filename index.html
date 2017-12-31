@@ -10,49 +10,24 @@ layout: default
     <div class="text-block">
       <div class="header-block">
         <h3>Medicinska föreningen presents</h3>
-        <h1>The most magical night this year</h1>
-        <h3>10th December 2017, 22:00</h3>
-        <h3>Nobels väg 10, Solna.</h3>
-        <h3>
-          <a href="/guests">
-            Practical info for guests  
-          </a>
-        </h3>
+        <h1>The most magical night</h1>
+        <h3>Was on the 10th December 2017</h3>
+        <h3>Thank you all for coming and making it possible!</h3>
       </div>
       <hr>
-      <h3>Countdown:</h3>
-      <h2 id="demo"></h1>
-        <hr>
-      <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("Dec 10, 2017 22:00:00").getTime();
-
-      // Update the count down every 1 second
-      var x = setInterval(function() {
-
-        // Get todays date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now an the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-        // Display the result in the element with id="demo"
-        document.getElementById("demo").innerHTML = days + " days " + hours + " hours "
-        + minutes + " minutes ";
-
-        // If the count down is finished, write some text 
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-      }, 1000);
-      </script>
+      <h1>Photos</h1>
+      <h3>
+        Did you take a photo at our photo wall?
+      </h3>
+      <div class="center">
+        <a href="https://www.facebook.com/media/set/?set=a.2028891317137238.1073741841.227196623973392&type=1&l=837de01458" class="button">
+        Go to photowall gallery
+      </a>
+      <div class="image-border">
+        {% image board.jpg %}
+      </div>
+      </div>
     </div>
-  </div>
   {% include mailinglist.html %}
+  </div>
 </div>
